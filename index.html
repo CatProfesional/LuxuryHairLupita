@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<!-- LUXURY HAIR CATALOGO LIMPIO 2026 -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luxury Hair | Terapia Capilar Profesional</title>
+    <meta name="description" content="Keratinas, alisados, tratamientos capilares, kits profesionales y productos para estilistas y uso personal. Envíos a toda la República Mexicana.">
+    <meta name="theme-color" content="#111111">
+
+    <meta property="og:title" content="Luxury Hair | Terapia Capilar Profesional">
+    <meta property="og:description" content="Productos profesionales para estilistas y para quienes buscan resultados de salón desde casa.">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="logo-luxury-hair.png">
+    <meta property="og:image" content="logo-luxury-hair.png">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#productos">Saltar al catálogo</a>
+
+    <header class="site-header" id="header">
+        <div class="container header-inner">
+            <a href="#inicio" class="logo brand-link" aria-label="Luxury Hair, ir al inicio">
+                <img src="logo-luxury-hair-horizontal.png" alt="Luxury Hair Terapia Capilar">
+            </a>
+
+            <nav class="main-nav" id="menu" aria-label="Navegación principal">
+                <a href="#inicio">Inicio</a>
+                <a href="#productos">Productos</a>
+                <a href="#mayoreo">Mayoreo</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#preguntas">Preguntas</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <a class="header-whatsapp" data-whatsapp-general target="_blank" rel="noopener noreferrer">
+                WhatsApp
+            </a>
+
+            <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-glow hero-glow-one"></div>
+            <div class="hero-glow hero-glow-two"></div>
+
+            <div class="container hero-grid">
+                <div class="hero-copy reveal">
+                    <span class="eyebrow">Terapia capilar profesional</span>
+                    <h1>Resultados de salón, cuidados desde casa.</h1>
+                    <p>
+                        Keratinas, alisados, kits y tratamientos profesionales para estilistas
+                        y para quienes buscan transformar su cabello.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#productos" class="btn btn-dark">Ver catálogo</a>
+                        <a data-whatsapp-general target="_blank" rel="noopener noreferrer" class="btn btn-light">
+                            Hablar por WhatsApp
+                        </a>
+                    </div>
+
+                    <div class="hero-trust" aria-label="Características principales">
+                        <span>Envíos a toda México</span>
+                        <span>Venta individual y mayoreo</span>
+                        <span>Atención personalizada</span>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal" aria-hidden="true">
+                    <div class="hero-card">
+                        <img class="hero-card-logo" src="logo-luxury-hair.png" alt="">
+                        <span class="hero-card-label">Terapia capilar profesional</span>
+                        <strong>Cabello con brillo, suavidad y movimiento.</strong>
+                        <div class="hero-card-line"></div>
+                        <small>Catálogo profesional · Venta individual y mayoreo</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section" aria-label="Datos de Luxury Hair">
+            <div class="container stats-grid">
+                <article>
+                    <strong>20</strong>
+                    <span>Productos disponibles</span>
+                </article>
+                <article>
+                    <strong>6</strong>
+                    <span>Categorías profesionales</span>
+                </article>
+                <article>
+                    <strong>MX</strong>
+                    <span>Envíos nacionales</span>
+                </article>
+                <article>
+                    <strong>Pro</strong>
+                    <span>Uso profesional y personal</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="catalog-section" id="productos">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="eyebrow">Catálogo</span>
+                    <h2>Encuentra el tratamiento ideal</h2>
+                    <p>Busca por nombre o filtra el catálogo por categoría.</p>
+                </div>
+
+                <div class="catalog-toolbar reveal">
+                    <label class="search-box" for="buscar">
+                        <span aria-hidden="true">⌕</span>
+                        <input type="search" id="buscar" placeholder="Buscar keratina, kit, sérum..." autocomplete="off">
+                    </label>
+
+                    <p class="product-counter" id="productCounter" aria-live="polite"></p>
+                </div>
+
+                <div class="filter-buttons reveal" id="filterButtons" aria-label="Filtrar productos">
+                    <button type="button" class="filter-btn active" data-category="todos">Todos</button>
+                    <button type="button" class="filter-btn" data-category="cremas">Cremas y sérums</button>
+                    <button type="button" class="filter-btn" data-category="kits">Kits</button>
+                    <button type="button" class="filter-btn" data-category="alisados">Alisados</button>
+                    <button type="button" class="filter-btn" data-category="keratinas">Keratinas</button>
+                    <button type="button" class="filter-btn" data-category="tratamientos">Tratamientos</button>
+                    <button type="button" class="filter-btn" data-category="herramientas">Herramientas</button>
+                </div>
+
+                <div class="products-grid" id="productsGrid"></div>
+
+                <div class="empty-state" id="emptyState" hidden>
+                    <h3>No encontramos ese producto</h3>
+                    <p>Prueba con otro nombre o selecciona “Todos”.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="wholesale-section" id="mayoreo">
+            <div class="container wholesale-grid">
+                <div class="wholesale-copy reveal">
+                    <span class="eyebrow">Precios especiales</span>
+                    <h2>Compra para tu salón o negocio</h2>
+                    <p>
+                        Varios productos cuentan con precio por mayoreo, paquetes y presentaciones
+                        profesionales. Escríbenos para confirmar disponibilidad y armar tu pedido.
+                    </p>
+
+                    <div class="check-list">
+                        <span>Precios por volumen</span>
+                        <span>Atención para estilistas</span>
+                        <span>Envíos a toda la República</span>
+                    </div>
+
+                    <a data-whatsapp-wholesale target="_blank" rel="noopener noreferrer" class="btn btn-gold">
+                        Solicitar precio de mayoreo
+                    </a>
+                </div>
+
+                <div class="wholesale-panel reveal">
+                    <p class="panel-kicker">Atención profesional</p>
+                    <h3>¿No sabes cuál tratamiento elegir?</h3>
+                    <p>
+                        Cuéntanos el tipo y estado del cabello. Te ayudaremos a identificar
+                        las opciones más adecuadas del catálogo.
+                    </p>
+                    <div class="panel-note">La recomendación final debe considerar una evaluación profesional del cabello.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="nosotros">
+            <div class="container about-grid">
+                <div class="about-visual reveal" aria-hidden="true">
+                    <div class="about-orbit"></div>
+                    <div class="about-mark">LH</div>
+                </div>
+
+                <div class="about-copy reveal">
+                    <span class="eyebrow">Luxury Hair</span>
+                    <h2>Productos para profesionales y público general</h2>
+                    <p>
+                        Nuestro catálogo reúne tratamientos para alisar, hidratar, reparar,
+                        definir rizos y mantener procesos capilares.
+                    </p>
+                    <p>
+                        Cada ficha muestra presentaciones, precios y beneficios para que puedas
+                        comparar opciones antes de contactarnos.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section" id="preguntas">
+            <div class="container faq-container">
+                <div class="section-heading reveal">
+                    <span class="eyebrow">Preguntas frecuentes</span>
+                    <h2>Antes de hacer tu pedido</h2>
+                </div>
+
+                <div class="faq-list reveal">
+                    <article class="faq-item">
+                        <button type="button" class="faq-question" aria-expanded="false">
+                            ¿Hacen envíos a toda la República Mexicana?
+                            <span>+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí. El costo y tiempo de envío se confirman al momento de realizar el pedido.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button type="button" class="faq-question" aria-expanded="false">
+                            ¿Venden a estilistas y también al público?
+                            <span>+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí. Hay productos para uso profesional y otros que también pueden utilizarse como mantenimiento en casa.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button type="button" class="faq-question" aria-expanded="false">
+                            ¿Cómo sé qué tratamiento necesita mi cabello?
+                            <span>+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Escríbenos por WhatsApp con información sobre tu tipo de cabello y procesos previos. Para procedimientos químicos, se recomienda una valoración profesional.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button type="button" class="faq-question" aria-expanded="false">
+                            ¿Los precios pueden cambiar?
+                            <span>+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Los precios publicados sirven como referencia. Confirma precio, existencia y promociones antes de realizar el pago.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contacto">
+            <div class="container contact-card reveal">
+                <div>
+                    <span class="eyebrow">Contacto</span>
+                    <h2>¿Lista para elegir tus productos?</h2>
+                    <p>Escríbenos por WhatsApp y recibe atención para compra individual o mayoreo.</p>
+                </div>
+
+                <a data-whatsapp-general target="_blank" rel="noopener noreferrer" class="btn btn-gold">
+                    Contactar ahora
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="#inicio" class="logo brand-link footer-logo" aria-label="Luxury Hair, ir al inicio">
+                    <img src="logo-luxury-hair-horizontal.png" alt="Luxury Hair Terapia Capilar">
+                </a>
+                <p>Terapia capilar profesional.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#productos">Productos</a>
+                <a href="#mayoreo">Mayoreo</a>
+                <a href="#preguntas">Preguntas</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <span>Envíos a toda la República Mexicana</span>
+            <span>© <span id="currentYear"></span> Luxury Hair</span>
+        </div>
+    </footer>
+
+    <a class="floating-whatsapp" data-whatsapp-general target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <span>WA</span>
+    </a>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Volver arriba">↑</button>
+
+    <div class="modal" id="productModal" aria-hidden="true">
+        <div class="modal-backdrop" data-close-modal></div>
+
+        <article class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button class="modal-close" type="button" data-close-modal aria-label="Cerrar">&times;</button>
+
+            <div class="modal-image-wrap">
+                <img id="modalImage" src="" alt="">
+                <span class="modal-badge" id="modalBadge" hidden></span>
+            </div>
+
+            <div class="modal-content">
+                <span class="modal-category" id="modalCategory"></span>
+                <h2 id="modalTitle"></h2>
+                <p class="modal-presentation" id="modalPresentation"></p>
+                <p id="modalDescription"></p>
+
+                <div class="modal-section modal-variant-section" id="modalVariantSection" hidden>
+                    <h3 id="modalVariantLabel">Elige una opción</h3>
+                    <div id="modalVariants" class="variant-options"></div>
+                </div>
+
+                <div class="modal-section">
+                    <h3>Precios y presentaciones</h3>
+                    <div id="modalPrices" class="modal-prices"></div>
+                </div>
+
+                <div class="modal-section">
+                    <h3>¿Para qué sirve?</h3>
+                    <ul id="modalBenefits"></ul>
+                </div>
+
+                <div class="modal-section" id="modalIdealSection">
+                    <h3>Ideal para</h3>
+                    <ul id="modalIdeal"></ul>
+                </div>
+
+                <div class="modal-note" id="modalNote" hidden></div>
+
+                <a id="modalWhatsapp" class="btn btn-gold modal-whatsapp" target="_blank" rel="noopener noreferrer">
+                    Consultar por WhatsApp
+                </a>
+            </div>
+        </article>
+    </div>
+
+    <noscript>
+        <div class="noscript-message">Activa JavaScript para visualizar el catálogo completo.</div>
+    </noscript>
+</body>
+</html>
