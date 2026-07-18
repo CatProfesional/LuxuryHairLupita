@@ -12,3 +12,14 @@ Esta versión incluye:
 - Número de WhatsApp: 52 998 366 6675.
 
 La animación de entrada se dejó pendiente para la etapa final, tal como se acordó.
+
+
+## Actualización de catálogo
+- WhatsApp: 998 342 4615 (enlace interno con código de país 52).
+- Nueva categoría: Alisado progresivo.
+- Nueva categoría: Alaciado permanente.
+- Nueva categoría: Reparadores.
+- Nanoplastia reclasificada como keratina / alisado progresivo.
+- Bruma Molecular agregada.
+- Mascarilla Cierre Técnico actualizada.
+- Fotografía de Hiperlux 6 reemplazada.

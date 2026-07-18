@@ -3,491 +3,754 @@
  * Formato: código de país + número, sin +, espacios ni guiones.
  * Ejemplo México: 5215512345678
  */
-const WHATSAPP_NUMBER = "529983666675";
+const WHATSAPP_NUMBER = "529983424615";
 
 const FALLBACK_IMAGE = "placeholder.svg";
 
 const products = [
     {
-        id: 1,
-        name: "Sérum en Spray",
-        slug: "serum-en-spray",
-        category: "cremas",
-        categoryLabel: "Cremas y sérums",
-        presentation: "125 ml",
-        image: "01-serum-en-spray.jpg",
-        description: "Finalizador profesional que ayuda a controlar el frizz, aportar brillo y proteger la fibra capilar.",
-        prices: [
-            { label: "Precio normal", value: "$280" },
-            { label: "Mayoreo (4+ piezas)", value: "$200" }
+        "id": 1,
+        "name": "Sérum en Spray",
+        "slug": "serum-en-spray",
+        "category": "cremas",
+        "categoryLabel": "Cremas y sérums",
+        "presentation": "125 ml",
+        "image": "01-serum-en-spray.jpg",
+        "description": "Finalizador profesional que ayuda a controlar el frizz, aportar brillo y proteger la fibra capilar.",
+        "prices": [
+            {
+                "label": "Precio normal",
+                "value": "$280"
+            },
+            {
+                "label": "Mayoreo (4+ piezas)",
+                "value": "$200"
+            }
         ],
-        benefits: [
+        "benefits": [
             "Finaliza tratamientos químicos",
             "Ayuda a controlar el frizz",
             "Aporta brillo inmediato",
             "Sella la cutícula",
             "Facilita el peinado"
         ],
-        ideal: [
+        "ideal": [
             "Cabello con alaciados, tintes, decoloraciones o permanentes",
             "Uso diario en casa o salón"
         ],
-        badge: "Popular"
+        "badge": "Popular"
     },
     {
-        id: 2,
-        name: "Crema de Peinar",
-        slug: "crema-de-peinar",
-        category: "cremas",
-        categoryLabel: "Cremas y sérums",
-        presentation: "300 ml",
-        image: "02-crema-peinar.jpg",
-        description: "Crema de uso diario para hidratar, facilitar el peinado y ayudar a reducir el frizz.",
-        prices: [
-            { label: "Precio normal", value: "$280" },
-            { label: "Media docena", value: "$600" },
-            { label: "Docena", value: "$1,100" }
+        "id": 2,
+        "name": "Crema de Peinar",
+        "slug": "crema-de-peinar",
+        "category": "cremas",
+        "categoryLabel": "Cremas y sérums",
+        "presentation": "300 ml",
+        "image": "02-crema-peinar.jpg",
+        "description": "Crema de uso diario para hidratar, facilitar el peinado y ayudar a reducir el frizz.",
+        "prices": [
+            {
+                "label": "Precio normal",
+                "value": "$280"
+            },
+            {
+                "label": "Media docena",
+                "value": "$600"
+            },
+            {
+                "label": "Docena",
+                "value": "$1,100"
+            }
         ],
-        benefits: [
+        "benefits": [
             "Mantiene hidratado el cabello",
             "Facilita el peinado",
             "Ayuda a reducir el frizz",
             "Protege del calor de secadora y plancha",
             "Ayuda a conservar el brillo"
         ],
-        ideal: [
+        "ideal": [
             "Uso diario",
             "Cabello con procesos químicos",
             "Todo tipo de cabello",
             "Aplicación en cabello limpio y húmedo"
         ],
-        note: "Aromas disponibles: Uva, Fresa, Chocolate, Durazno, Sandía perfumada, Plátano, Bebé, La Vida Es Bella, Paris Hilton y Katy Perry.",
-        variantLabel: "Elige el aroma",
-        variantMessageLabel: "aroma",
-        variantSummary: "11 aromas disponibles",
-        variants: [
-                    { label: "Uva", presentation: "300 ml · Aroma Uva", image: "02-crema-peinar.jpg" },
-                    { label: "Fresa", presentation: "300 ml · Aroma Fresa", image: "02-crema-peinar.jpg" },
-                    { label: "Chocolate", presentation: "300 ml · Aroma Chocolate", image: "02-crema-peinar.jpg" },
-                    { label: "Durazno", presentation: "300 ml · Aroma Durazno", image: "02-crema-peinar.jpg" },
-                    { label: "Sandía", presentation: "300 ml · Aroma Sandía", image: "02-crema-peinar.jpg" },
-                    { label: "Plátano", presentation: "300 ml · Aroma Plátano", image: "02-crema-peinar.jpg" },
-                    { label: "Bebé", presentation: "300 ml · Aroma Bebé", image: "02-crema-peinar.jpg" },
-                    { label: "La Vida es Bella", presentation: "300 ml · Aroma La Vida es Bella", image: "02-crema-peinar.jpg" },
-                    { label: "Paris Hilton", presentation: "300 ml · Aroma Paris Hilton", image: "02-crema-peinar.jpg" },
-                    { label: "Katy Perry", presentation: "300 ml · Aroma Katy Perry", image: "02-crema-peinar.jpg" },
-                    { label: "Mora", presentation: "300 ml · Aroma Mora", image: "02-crema-peinar.jpg" }
+        "note": "Aromas disponibles: Uva, Fresa, Chocolate, Durazno, Sandía perfumada, Plátano, Bebé, La Vida Es Bella, Paris Hilton y Katy Perry.",
+        "variantLabel": "Elige el aroma",
+        "variantMessageLabel": "aroma",
+        "variantSummary": "11 aromas disponibles",
+        "variants": [
+            {
+                "label": "Uva",
+                "presentation": "300 ml · Aroma Uva",
+                "image": "02-crema-peinar.jpg"
+            },
+            {
+                "label": "Fresa",
+                "presentation": "300 ml · Aroma Fresa",
+                "image": "02-crema-peinar.jpg"
+            },
+            {
+                "label": "Chocolate",
+                "presentation": "300 ml · Aroma Chocolate",
+                "image": "02-crema-peinar.jpg"
+            },
+            {
+                "label": "Durazno",
+                "presentation": "300 ml · Aroma Durazno",
+                "image": "02-crema-peinar.jpg"
+            },
+            {
+                "label": "Sandía",
+                "presentation": "300 ml · Aroma Sandía",
+                "image": "02-crema-peinar.jpg"
+            },
+            {
+                "label": "Plátano",
+                "presentation": "300 ml · Aroma Plátano",
+                "image": "02-crema-peinar.jpg"
+            },
+            {
+                "label": "Bebé",
+                "presentation": "300 ml · Aroma Bebé",
+                "image": "02-crema-peinar.jpg"
+            },
+            {
+                "label": "La Vida es Bella",
+                "presentation": "300 ml · Aroma La Vida es Bella",
+                "image": "02-crema-peinar.jpg"
+            },
+            {
+                "label": "Paris Hilton",
+                "presentation": "300 ml · Aroma Paris Hilton",
+                "image": "02-crema-peinar.jpg"
+            },
+            {
+                "label": "Katy Perry",
+                "presentation": "300 ml · Aroma Katy Perry",
+                "image": "02-crema-peinar.jpg"
+            },
+            {
+                "label": "Mora",
+                "presentation": "300 ml · Aroma Mora",
+                "image": "02-crema-peinar.jpg"
+            }
         ]
     },
     {
-        id: 3,
-        name: "Kit de Crecimiento",
-        slug: "kit-de-crecimiento",
-        category: "kits",
-        categoryLabel: "Kits profesionales",
-        presentation: "Shampoo + tónico",
-        image: "03-kit-crecimiento.jpg",
-        description: "Rutina de shampoo y tónico para fortalecer el cabello y cuidar el cuero cabelludo.",
-        prices: [
-            { label: "Precio normal", value: "$680" },
-            { label: "Mayoreo (4+ kits)", value: "$380" }
+        "id": 3,
+        "name": "Kit de Crecimiento",
+        "slug": "kit-de-crecimiento",
+        "category": "kits",
+        "categoryLabel": "Kits profesionales",
+        "presentation": "Shampoo + tónico",
+        "image": "03-kit-crecimiento.jpg",
+        "description": "Rutina de shampoo y tónico para fortalecer el cabello y cuidar el cuero cabelludo.",
+        "prices": [
+            {
+                "label": "Precio normal",
+                "value": "$680"
+            },
+            {
+                "label": "Mayoreo (4+ kits)",
+                "value": "$380"
+            }
         ],
-        benefits: [
+        "benefits": [
             "Ayuda a estimular el crecimiento",
             "Fortalece el folículo",
             "Ayuda a reducir la caída",
             "Nutre el cuero cabelludo",
             "Aporta hidratación"
         ],
-        ideal: [
+        "ideal": [
             "Cabello débil",
             "Personas con caída del cabello",
             "Crecimiento lento"
         ],
-        badge: "Más vendido"
+        "badge": "Más vendido"
     },
     {
-        id: 4,
-        name: "Kit Post Alisado",
-        slug: "kit-post-alisado",
-        category: "kits",
-        categoryLabel: "Kits profesionales",
-        presentation: "Mantenimiento",
-        image: "04-kit-post-alisado.jpg",
-        description: "Rutina de mantenimiento para ayudar a prolongar los resultados de un alisado.",
-        prices: [
-            { label: "Precio normal", value: "$550" },
-            { label: "3 kits", value: "$310 c/u" },
-            { label: "5 kits", value: "$280 c/u" }
+        "id": 4,
+        "name": "Kit Post Alisado",
+        "slug": "kit-post-alisado",
+        "category": "kits",
+        "categoryLabel": "Kits profesionales",
+        "presentation": "Mantenimiento",
+        "image": "04-kit-post-alisado.jpg",
+        "description": "Rutina de mantenimiento para ayudar a prolongar los resultados de un alisado.",
+        "prices": [
+            {
+                "label": "Precio normal",
+                "value": "$550"
+            },
+            {
+                "label": "3 kits",
+                "value": "$310 c/u"
+            },
+            {
+                "label": "5 kits",
+                "value": "$280 c/u"
+            }
         ],
-        benefits: [
+        "benefits": [
             "Ayuda a mantener el alaciado",
             "Restablece el pH",
             "Hidrata",
             "Ayuda a prolongar el tratamiento",
             "Protege del calor"
         ],
-        ideal: [
+        "ideal": [
             "Cabello con alaciado progresivo"
         ]
     },
     {
-        id: 5,
-        name: "Kit Rizos Perfectos",
-        slug: "kit-para-rizos",
-        category: "kits",
-        categoryLabel: "Kits profesionales",
-        presentation: "Shampoo + acondicionador",
-        image: "05-kit-rizos.jpg",
-        description: "Rutina para hidratar, definir y mantener el patrón natural del cabello rizado u ondulado.",
-        prices: [
-            { label: "Precio normal", value: "$550" },
-            { label: "3 kits", value: "$310 c/u" },
-            { label: "5 kits", value: "$280 c/u" }
+        "id": 5,
+        "name": "Kit Rizos Perfectos",
+        "slug": "kit-para-rizos",
+        "category": "kits",
+        "categoryLabel": "Kits profesionales",
+        "presentation": "Shampoo + acondicionador",
+        "image": "05-kit-rizos.jpg",
+        "description": "Rutina para hidratar, definir y mantener el patrón natural del cabello rizado u ondulado.",
+        "prices": [
+            {
+                "label": "Precio normal",
+                "value": "$550"
+            },
+            {
+                "label": "3 kits",
+                "value": "$310 c/u"
+            },
+            {
+                "label": "5 kits",
+                "value": "$280 c/u"
+            }
         ],
-        benefits: [
+        "benefits": [
             "Ayuda a definir los rizos",
             "Hidrata profundamente",
             "Controla el frizz",
             "Devuelve elasticidad",
             "Nutre el cabello"
         ],
-        ideal: [
+        "ideal": [
             "Cabello rizado",
             "Cabello ondulado"
         ]
     },
     {
-        id: 6,
-        name: "Kit de Muestra",
-        slug: "kit-de-muestra",
-        category: "kits",
-        categoryLabel: "Kits profesionales",
-        presentation: "Línea alisante completa",
-        image: "20-kit-muestra.jpg",
-        description: "Presentación pensada para conocer y probar una línea alisante profesional completa.",
-        prices: [
-            { label: "Kit completo", value: "$1,850" }
+        "id": 6,
+        "name": "Kit de Muestra",
+        "slug": "kit-de-muestra",
+        "category": "kits",
+        "categoryLabel": "Kits profesionales",
+        "presentation": "Línea alisante completa",
+        "image": "20-kit-muestra.jpg",
+        "description": "Presentación pensada para conocer y probar una línea alisante profesional completa.",
+        "prices": [
+            {
+                "label": "Kit completo",
+                "value": "$1,850"
+            }
         ],
-        benefits: [
+        "benefits": [
             "Línea alisante completa",
             "Presentación de prueba profesional",
             "Permite conocer distintos productos de la línea"
         ],
-        ideal: [
+        "ideal": [
             "Estilistas que desean probar la línea"
         ]
     },
     {
-        id: 7,
-        name: "Hiperlux 6",
-        slug: "hiperlux-6",
-        category: "alisados",
-        categoryLabel: "Alisados profesionales",
-        presentation: "Alisado en espuma · 1 L",
-        image: "07-hiperlux-6.jpg",
-        description: "Alisado progresivo en espuma para reducir volumen y frizz con acabado brillante.",
-        prices: [
-            { label: "Precio", value: "$2,800" }
+        "id": 7,
+        "name": "Hiperlux 6",
+        "slug": "hiperlux-6",
+        "category": "progresivos",
+        "categoryLabel": "Alisado progresivo",
+        "presentation": "Alisado progresivo en espuma · 1 L",
+        "image": "07-hiperlux-6-actualizada.jpg",
+        "description": "Alisado progresivo en espuma para reducir volumen y frizz, con brillo espejo y acabado profesional.",
+        "prices": [
+            {
+                "label": "Precio",
+                "value": "$2,800"
+            }
         ],
-        benefits: [
+        "benefits": [
             "Alisa progresivamente",
             "Reduce el frizz",
             "Aporta brillo intenso",
             "Ayuda a reparar e hidratar",
             "Puede dejar el cabello lacio hasta un 99%"
         ],
-        ideal: [
+        "ideal": [
             "Uso profesional",
             "Personas que buscan alaciado progresivo"
         ],
-        note: "Duración indicada de 5 a 7 meses. Libre de formol y con lavado inmediato, según la información proporcionada.",
-        badge: "Profesional"
+        "note": "Duración indicada de 5 a 7 meses. Libre de formol y con lavado inmediato, según la información proporcionada.",
+        "badge": "Profesional"
     },
     {
-        id: 8,
-        name: "Afroliss",
-        slug: "afroliss",
-        category: "alisados",
-        categoryLabel: "Alisados profesionales",
-        presentation: "Alisado progresivo · 1 L",
-        image: "08-afroliss.jpg",
-        description: "Tratamiento progresivo orientado a cabello afro, grueso o muy resistente.",
-        prices: [
-            { label: "Precio", value: "$2,300" }
+        "id": 8,
+        "name": "Afroliss",
+        "slug": "afroliss",
+        "category": "progresivos",
+        "categoryLabel": "Alisado progresivo",
+        "presentation": "Alisado progresivo · 1 L",
+        "image": "08-afroliss.jpg",
+        "description": "Tratamiento progresivo orientado a cabello afro, grueso o muy resistente.",
+        "prices": [
+            {
+                "label": "Precio",
+                "value": "$2,300"
+            }
         ],
-        benefits: [
+        "benefits": [
             "Alisa cabello afro o muy resistente",
             "Ayuda a controlar el volumen",
             "Reduce el frizz",
             "Nutre e hidrata"
         ],
-        ideal: [
+        "ideal": [
             "Cabello grueso",
             "Cabello afro",
             "Cabello muy rebelde"
         ],
-        note: "Puede lograr un lacio de hasta 99% y una duración de hasta 8 meses, según la información proporcionada."
+        "note": "Puede lograr un lacio de hasta 99% y una duración de hasta 8 meses, según la información proporcionada."
     },
     {
-        id: 9,
-        name: "Alisado Permanente + Neutralizante",
-        slug: "alaciado-permanente",
-        category: "alisados",
-        categoryLabel: "Alisados profesionales",
-        presentation: "Kit profesional",
-        image: "09-alaciado-permanente.jpg",
-        description: "Sistema profesional que modifica la estructura del cabello para lograr un alaciado permanente.",
-        prices: [
-            { label: "Precio", value: "$1,850" }
+        "id": 10,
+        "name": "Alisado Hidrogel",
+        "slug": "alisado-hidrogel",
+        "category": "progresivos",
+        "categoryLabel": "Alisado progresivo",
+        "presentation": "1 L / 500 ml",
+        "image": "10-alisado-hidrogel.jpg",
+        "description": "Alisado profesional para reducir el frizz y dejar el cabello suave y brillante.",
+        "prices": [
+            {
+                "label": "1 litro",
+                "value": "$2,300"
+            },
+            {
+                "label": "500 ml",
+                "value": "$1,500"
+            }
         ],
-        benefits: [
-            "Alaciado permanente",
-            "Acabado lacio",
-            "Aporta brillo",
-            "Aporta suavidad"
-        ],
-        ideal: [
-            "Cabello virgen",
-            "Cabello resistente"
-        ],
-        note: "No recomendado para cabello decolorado o con procesos químicos previos. Requiere aplicación profesional."
-    },
-    {
-        id: 10,
-        name: "Alisado Hidrogel",
-        slug: "alisado-hidrogel",
-        category: "alisados",
-        categoryLabel: "Alisados profesionales",
-        presentation: "1 L / 500 ml",
-        image: "10-alisado-hidrogel.jpg",
-        description: "Alisado profesional para reducir el frizz y dejar el cabello suave y brillante.",
-        prices: [
-            { label: "1 litro", value: "$2,300" },
-            { label: "500 ml", value: "$1,500" }
-        ],
-        benefits: [
+        "benefits": [
             "Alisado indicado de 90 a 95%",
             "Reduce el frizz",
             "Aporta brillo intenso",
             "Deja el cabello suave y sedoso",
             "Lavado inmediato después de la aplicación"
         ],
-        ideal: [
+        "ideal": [
             "Cabello resistente"
         ],
-        variantLabel: "Elige la presentación",
-        variantMessageLabel: "presentación",
-        variantSummary: "2 presentaciones disponibles",
-        variants: [
-                    { label: "1 litro", presentation: "1 litro", image: "10-alisado-hidrogel.jpg", price: "$2,300" },
-                    { label: "500 ml", presentation: "500 ml", image: "10-alisado-hidrogel-500.jpg", price: "$1,500" }
+        "variantLabel": "Elige la presentación",
+        "variantMessageLabel": "presentación",
+        "variantSummary": "2 presentaciones disponibles",
+        "variants": [
+            {
+                "label": "1 litro",
+                "presentation": "1 litro",
+                "image": "10-alisado-hidrogel.jpg",
+                "price": "$2,300"
+            },
+            {
+                "label": "500 ml",
+                "presentation": "500 ml",
+                "image": "10-alisado-hidrogel-500-actualizada.jpg",
+                "price": "$1,500"
+            }
         ]
     },
     {
-        id: 11,
-        name: "Keratina Japonesa",
-        slug: "keratina-japonesa",
-        category: "keratinas",
-        categoryLabel: "Keratinas premium",
-        presentation: "1 L / 500 ml",
-        image: "11-keratina-japonesa.jpg",
-        description: "Keratina profesional para alisar, hidratar y reducir el frizz con movimiento natural.",
-        prices: [
-            { label: "1 litro", value: "$2,300" },
-            { label: "500 ml", value: "$1,500" }
+        "id": 11,
+        "name": "Keratina Japonesa",
+        "slug": "keratina-japonesa",
+        "category": "progresivos",
+        "categoryLabel": "Alisado progresivo",
+        "presentation": "1 L / 500 ml",
+        "image": "11-keratina-japonesa.jpg",
+        "description": "Keratina profesional para alisar, hidratar y reducir el frizz con movimiento natural.",
+        "prices": [
+            {
+                "label": "1 litro",
+                "value": "$2,300"
+            },
+            {
+                "label": "500 ml",
+                "value": "$1,500"
+            }
         ],
-        benefits: [
+        "benefits": [
             "Alisado indicado de 90 a 95%",
             "Hidrata profundamente",
             "Reduce el frizz",
             "Aporta brillo y movimiento natural",
             "Protege la fibra capilar con inhibidor"
         ],
-        ideal: [
+        "ideal": [
             "Todo tipo de cabello resistente"
         ],
-        variantLabel: "Elige la presentación",
-        variantMessageLabel: "presentación",
-        variantSummary: "2 presentaciones disponibles",
-        variants: [
-                    { label: "1 litro", presentation: "1 litro", image: "11-keratina-japonesa.jpg", price: "$2,300" },
-                    { label: "500 ml", presentation: "500 ml", image: "11-keratina-japonesa.jpg", price: "$1,500" }
+        "variantLabel": "Elige la presentación",
+        "variantMessageLabel": "presentación",
+        "variantSummary": "2 presentaciones disponibles",
+        "variants": [
+            {
+                "label": "1 litro",
+                "presentation": "1 litro",
+                "image": "11-keratina-japonesa.jpg",
+                "price": "$2,300"
+            },
+            {
+                "label": "500 ml",
+                "presentation": "500 ml",
+                "image": "11-keratina-japonesa.jpg",
+                "price": "$1,500"
+            }
         ]
     },
     {
-        id: 12,
-        name: "Keratina Brasileña",
-        slug: "keratina-brasilena",
-        category: "keratinas",
-        categoryLabel: "Keratinas premium",
-        presentation: "1 L / 500 ml",
-        image: "12-keratina-brasilena.jpg",
-        description: "Keratina para disminuir el frizz y mantener un acabado suave en cabello procesado.",
-        prices: [
-            { label: "1 litro", value: "$2,500" },
-            { label: "500 ml", value: "$1,500" }
+        "id": 12,
+        "name": "Keratina Brasileña",
+        "slug": "keratina-brasilena",
+        "category": "progresivos",
+        "categoryLabel": "Alisado progresivo",
+        "presentation": "1 L / 500 ml",
+        "image": "12-keratina-brasilena.jpg",
+        "description": "Keratina para disminuir el frizz y mantener un acabado suave en cabello procesado.",
+        "prices": [
+            {
+                "label": "1 litro",
+                "value": "$2,500"
+            },
+            {
+                "label": "500 ml",
+                "value": "$1,500"
+            }
         ],
-        benefits: [
+        "benefits": [
             "Alisado indicado de 80 a 90%",
             "Disminuye el frizz",
             "Ayuda a mantener el pH equilibrado",
             "Lavado inmediato",
             "No contiene formol, según la información proporcionada"
         ],
-        ideal: [
+        "ideal": [
             "Cabello decolorado",
             "Cabello con mechas",
             "Cabello tinturado"
         ],
-        variantLabel: "Elige la presentación",
-        variantMessageLabel: "presentación",
-        variantSummary: "2 presentaciones disponibles",
-        variants: [
-                    { label: "1 litro", presentation: "1 litro", image: "12-keratina-brasilena.jpg", price: "$2,500" },
-                    { label: "500 ml", presentation: "500 ml", image: "12-keratina-brasilena.jpg", price: "$1,500" }
+        "variantLabel": "Elige la presentación",
+        "variantMessageLabel": "presentación",
+        "variantSummary": "2 presentaciones disponibles",
+        "variants": [
+            {
+                "label": "1 litro",
+                "presentation": "1 litro",
+                "image": "12-keratina-brasilena.jpg",
+                "price": "$2,500"
+            },
+            {
+                "label": "500 ml",
+                "presentation": "500 ml",
+                "image": "12-keratina-brasilena.jpg",
+                "price": "$1,500"
+            }
         ]
     },
     {
-        id: 13,
-        name: "Keratina Marroquí Ultra",
-        slug: "keratina-marroqui-ultra",
-        category: "keratinas",
-        categoryLabel: "Keratinas premium",
-        presentation: "1 L / 500 ml",
-        image: "14-keratina-marroqui.jpg",
-        description: "Keratina de alto desempeño para cabello ondulado o rizado resistente.",
-        prices: [
-            { label: "1 litro", value: "$2,300" },
-            { label: "500 ml", value: "$1,500" }
+        "id": 13,
+        "name": "Keratina Marroquí Ultra",
+        "slug": "keratina-marroqui-ultra",
+        "category": "progresivos",
+        "categoryLabel": "Alisado progresivo",
+        "presentation": "1 L / 500 ml",
+        "image": "14-keratina-marroqui.jpg",
+        "description": "Keratina de alto desempeño para cabello ondulado o rizado resistente.",
+        "prices": [
+            {
+                "label": "1 litro",
+                "value": "$2,300"
+            },
+            {
+                "label": "500 ml",
+                "value": "$1,500"
+            }
         ],
-        benefits: [
+        "benefits": [
             "Alisado indicado de 95 a 98%",
             "Reduce el frizz",
             "Aporta brillo intenso",
             "Hidrata",
             "Lavado inmediato"
         ],
-        ideal: [
+        "ideal": [
             "Cabello ondulado resistente",
             "Cabello rizado resistente"
         ],
-        note: "Duración aproximada indicada de 5 a 6 meses.",
-        badge: "Premium",
-        variantLabel: "Elige la presentación",
-        variantMessageLabel: "presentación",
-        variantSummary: "2 presentaciones disponibles",
-        variants: [
-                    { label: "1 litro", presentation: "1 litro · Ultra", image: "14-keratina-marroqui.jpg", price: "$2,300", displayName: "Keratina Marroquí Ultra" },
-                    { label: "500 ml", presentation: "500 ml", image: "14-keratina-marroqui-500.jpg", price: "$1,500", displayName: "Keratina Marroquí" }
+        "note": "Duración aproximada indicada de 5 a 6 meses.",
+        "badge": "Premium",
+        "variantLabel": "Elige la presentación",
+        "variantMessageLabel": "presentación",
+        "variantSummary": "2 presentaciones disponibles",
+        "variants": [
+            {
+                "label": "1 litro",
+                "presentation": "1 litro · Ultra",
+                "image": "14-keratina-marroqui.jpg",
+                "price": "$2,300",
+                "displayName": "Keratina Marroquí Ultra"
+            },
+            {
+                "label": "500 ml",
+                "presentation": "500 ml",
+                "image": "14-keratina-marroqui-500.jpg",
+                "price": "$1,500",
+                "displayName": "Keratina Marroquí"
+            }
         ]
     },
     {
-        id: 14,
-        name: "Encerado Capilar",
-        slug: "encerado-capilar",
-        category: "tratamientos",
-        categoryLabel: "Tratamientos especializados",
-        presentation: "1 L / 500 ml",
-        image: "06-encerado-capilar.jpg",
-        description: "Tratamiento nutritivo para cabello seco, maltratado o procesado químicamente.",
-        prices: [
-            { label: "1 litro", value: "$1,500" },
-            { label: "500 ml", value: "$1,000" }
+        "id": 19,
+        "name": "Nanoplastia Molecular",
+        "slug": "nanoplastia-molecular",
+        "category": "progresivos",
+        "categoryLabel": "Alisado progresivo",
+        "presentation": "500 ml",
+        "image": "18-nanoplastia-molecular.jpg",
+        "description": "Keratina de nanoplastia molecular orientada a alisar progresivamente y mejorar la suavidad, el brillo y la apariencia del cabello.",
+        "prices": [
+            {
+                "label": "Precio",
+                "value": "$580"
+            }
         ],
-        benefits: [
+        "benefits": [
+            "Alisado progresivo",
+            "Ayuda a reducir el frizz",
+            "Aporta brillo intenso",
+            "Mejora la suavidad del cabello",
+            "Ayuda a renovar la apariencia de la fibra capilar"
+        ],
+        "ideal": [
+            "Cabello que busca alisado progresivo",
+            "Cabello con frizz o falta de brillo"
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Alisado Permanente + Neutralizante",
+        "slug": "alaciado-permanente",
+        "category": "permanente",
+        "categoryLabel": "Alaciado permanente",
+        "presentation": "Kit profesional",
+        "image": "09-alaciado-permanente.jpg",
+        "description": "Sistema profesional que modifica la estructura del cabello para lograr un alaciado permanente.",
+        "prices": [
+            {
+                "label": "Precio",
+                "value": "$1,850"
+            }
+        ],
+        "benefits": [
+            "Alaciado permanente",
+            "Acabado lacio",
+            "Aporta brillo",
+            "Aporta suavidad"
+        ],
+        "ideal": [
+            "Cabello virgen",
+            "Cabello resistente"
+        ],
+        "note": "No recomendado para cabello decolorado o con procesos químicos previos. Requiere aplicación profesional."
+    },
+    {
+        "id": 14,
+        "name": "Encerado Capilar",
+        "slug": "encerado-capilar",
+        "category": "reparadores",
+        "categoryLabel": "Reparadores",
+        "presentation": "1 L / 500 ml",
+        "image": "06-encerado-capilar.jpg",
+        "description": "Tratamiento nutritivo para cabello seco, maltratado o procesado químicamente.",
+        "prices": [
+            {
+                "label": "1 litro",
+                "value": "$1,500"
+            },
+            {
+                "label": "500 ml",
+                "value": "$1,000"
+            }
+        ],
+        "benefits": [
             "Hidrata profundamente",
             "Ayuda a reponer lípidos",
             "Nutre el cabello",
             "Devuelve brillo",
             "Mejora la suavidad"
         ],
-        ideal: [
+        "ideal": [
             "Cabello seco",
             "Cabello maltratado",
             "Cabello con procesos químicos"
         ],
-        note: "Este producto no alisa.",
-        variantLabel: "Elige la presentación",
-        variantMessageLabel: "presentación",
-        variantSummary: "2 presentaciones disponibles",
-        variants: [
-                    { label: "1 litro", presentation: "1 litro", image: "06-encerado-capilar.jpg", price: "$1,500" },
-                    { label: "500 ml", presentation: "500 ml", image: "06-encerado-capilar.jpg", price: "$1,000" }
+        "note": "Este producto no alisa.",
+        "variantLabel": "Elige la presentación",
+        "variantMessageLabel": "presentación",
+        "variantSummary": "2 presentaciones disponibles",
+        "variants": [
+            {
+                "label": "1 litro",
+                "presentation": "1 litro",
+                "image": "06-encerado-capilar.jpg",
+                "price": "$1,500"
+            },
+            {
+                "label": "500 ml",
+                "presentation": "500 ml",
+                "image": "06-encerado-capilar.jpg",
+                "price": "$1,000"
+            }
         ]
     },
     {
-        id: 15,
-        name: "Mascarilla Cierre Técnico",
-        slug: "mascarilla-cierre-tecnico",
-        category: "tratamientos",
-        categoryLabel: "Tratamientos especializados",
-        presentation: "1 litro",
-        image: "13-mascarilla-cierre.jpg",
-        description: "Mascarilla para finalizar procesos químicos y ayudar a restablecer el equilibrio del cabello.",
-        prices: [
-            { label: "Precio", value: "$550" }
+        "id": 16,
+        "name": "Cirugía Capilar",
+        "slug": "cirugia-capilar",
+        "category": "reparadores",
+        "categoryLabel": "Reparadores",
+        "presentation": "1 L / 500 ml",
+        "image": "17-cirugia-capilar.jpg",
+        "description": "Tratamiento de reparación e hidratación profunda para cabello dañado o procesado.",
+        "prices": [
+            {
+                "label": "1 litro",
+                "value": "$1,500"
+            },
+            {
+                "label": "500 ml",
+                "value": "$1,000"
+            }
         ],
-        benefits: [
-            "Ayuda a cerrar la cutícula",
-            "Ayuda a restaurar el pH",
-            "Hidrata",
-            "Reduce el frizz",
-            "Aumenta el brillo",
-            "Ayuda a prolongar resultados"
-        ],
-        ideal: [
-            "Después de procesos químicos",
-            "Mantenimiento de tratamientos capilares"
-        ]
-    },
-    {
-        id: 16,
-        name: "Cirugía Capilar",
-        slug: "cirugia-capilar",
-        category: "tratamientos",
-        categoryLabel: "Tratamientos especializados",
-        presentation: "1 L / 500 ml",
-        image: "17-cirugia-capilar.jpg",
-        description: "Tratamiento de reparación e hidratación profunda para cabello dañado o procesado.",
-        prices: [
-            { label: "1 litro", value: "$1,500" },
-            { label: "500 ml", value: "$1,000" }
-        ],
-        benefits: [
+        "benefits": [
             "Ayuda a reparar la fibra capilar",
             "Hidrata profundamente",
             "Devuelve elasticidad",
             "Fortalece el cabello",
             "Reduce el frizz"
         ],
-        ideal: [
+        "ideal": [
             "Cabello dañado",
             "Cabello procesado químicamente",
             "Todo tipo de cabello"
         ],
-        variantLabel: "Elige la presentación",
-        variantMessageLabel: "presentación",
-        variantSummary: "2 presentaciones disponibles",
-        variants: [
-                    { label: "1 litro", presentation: "1 litro", image: "17-cirugia-capilar.jpg", price: "$1,500" },
-                    { label: "500 ml", presentation: "500 ml", image: "17-cirugia-capilar.jpg", price: "$1,000" }
+        "variantLabel": "Elige la presentación",
+        "variantMessageLabel": "presentación",
+        "variantSummary": "2 presentaciones disponibles",
+        "variants": [
+            {
+                "label": "1 litro",
+                "presentation": "1 litro",
+                "image": "17-cirugia-capilar.jpg",
+                "price": "$1,500"
+            },
+            {
+                "label": "500 ml",
+                "presentation": "500 ml",
+                "image": "17-cirugia-capilar.jpg",
+                "price": "$1,000"
+            }
         ]
     },
     {
-        id: 17,
-        name: "Botox Curly",
-        slug: "botox-curly",
-        category: "tratamientos",
-        categoryLabel: "Tratamientos especializados",
-        presentation: "1 L / 500 ml",
-        image: "16-botox-curly.jpg",
-        description: "Tratamiento reparador e hidratante para conservar y definir el patrón natural del rizo.",
-        prices: [
-            { label: "1 litro", value: "$2,200" },
-            { label: "500 ml", value: "$1,500" }
+        "id": 21,
+        "name": "Bruma Molecular",
+        "slug": "bruma-molecular",
+        "category": "reparadores",
+        "categoryLabel": "Reparadores",
+        "presentation": "1 litro",
+        "image": "21-bruma-molecular.jpg",
+        "description": "Tratamiento de preparación y reparación capilar que repone proteínas, fortalece la fibra y aporta brillo instantáneo.",
+        "prices": [
+            {
+                "label": "Precio de lanzamiento",
+                "value": "$800"
+            },
+            {
+                "label": "Precio regular",
+                "value": "$1,100"
+            }
         ],
-        benefits: [
+        "benefits": [
+            "Prepara el cabello antes de procesos de reconstrucción capilar",
+            "Realiza reposición de proteínas",
+            "Fortalece la fibra capilar desde el interior",
+            "Aporta brillo instantáneo",
+            "Ayuda a dejar el cabello más suave y sano"
+        ],
+        "ideal": [
+            "Cabello que necesita reparación y fortalecimiento",
+            "Preparación previa a procesos de reconstrucción capilar"
+        ],
+        "note": "Tecnología de reparación y brillo instantáneo. Presentación profesional de 1 litro.",
+        "badge": "Nuevo"
+    },
+    {
+        "id": 15,
+        "name": "Mascarilla Cierre Técnico",
+        "slug": "mascarilla-cierre-tecnico",
+        "category": "reparadores",
+        "categoryLabel": "Reparadores",
+        "presentation": "1 litro · pH 4.5",
+        "image": "13-mascarilla-cierre-actualizada.jpg",
+        "description": "Mascarilla ácida de cierre técnico formulada para equilibrar y sellar la fibra capilar después de procesos químicos.",
+        "prices": [
+            {
+                "label": "Precio",
+                "value": "$550"
+            }
+        ],
+        "benefits": [
+            "Sella y cierra la cutícula",
+            "Ayuda a restablecer el pH natural del cabello",
+            "Aporta hidratación y suavidad",
+            "Reduce el frizz y mejora el brillo",
+            "Protege y prolonga los resultados de los tratamientos"
+        ],
+        "ideal": [
+            "Después de alisados, decoloraciones o tintes",
+            "Después de procesos de reconstrucción capilar",
+            "Mantenimiento de tratamientos químicos"
+        ],
+        "note": "pH ácido 4.5. Ingredientes destacados: ácido hialurónico, ácido láctico, aceite de macadamia y proteína de trigo."
+    },
+    {
+        "id": 17,
+        "name": "Botox Curly",
+        "slug": "botox-curly",
+        "category": "tratamientos",
+        "categoryLabel": "Tratamientos especializados",
+        "presentation": "1 L / 500 ml",
+        "image": "16-botox-curly.jpg",
+        "description": "Tratamiento reparador e hidratante para conservar y definir el patrón natural del rizo.",
+        "prices": [
+            {
+                "label": "1 litro",
+                "value": "$2,200"
+            },
+            {
+                "label": "500 ml",
+                "value": "$1,500"
+            }
+        ],
+        "benefits": [
             "Ayuda a reparar el cabello rizado",
             "Hidrata profundamente",
             "Define los rizos",
@@ -495,85 +758,80 @@ const products = [
             "Aporta brillo y elasticidad",
             "Fortalece la fibra capilar"
         ],
-        ideal: [
+        "ideal": [
             "Rizos tipo 3, 3B y 3C",
             "Cabello afro"
         ],
-        note: "No alisa; conserva el patrón natural del rizo.",
-        variantLabel: "Elige la presentación",
-        variantMessageLabel: "presentación",
-        variantSummary: "2 presentaciones disponibles",
-        variants: [
-                    { label: "1 litro", presentation: "1 litro", image: "16-botox-curly.jpg", price: "$2,200" },
-                    { label: "500 ml", presentation: "500 ml", image: "16-botox-curly.jpg", price: "$1,500" }
+        "note": "No alisa; conserva el patrón natural del rizo.",
+        "variantLabel": "Elige la presentación",
+        "variantMessageLabel": "presentación",
+        "variantSummary": "2 presentaciones disponibles",
+        "variants": [
+            {
+                "label": "1 litro",
+                "presentation": "1 litro",
+                "image": "16-botox-curly.jpg",
+                "price": "$2,200"
+            },
+            {
+                "label": "500 ml",
+                "presentation": "500 ml",
+                "image": "16-botox-curly.jpg",
+                "price": "$1,500"
+            }
         ]
     },
     {
-        id: 18,
-        name: "Shampoo Limpieza Profunda",
-        slug: "shampoo-limpieza-profunda",
-        category: "tratamientos",
-        categoryLabel: "Tratamientos especializados",
-        presentation: "1 litro",
-        image: "15-shampoo-limpieza.jpg",
-        description: "Shampoo preparador para retirar residuos antes de tratamientos profesionales.",
-        prices: [
-            { label: "Precio", value: "$280" }
+        "id": 18,
+        "name": "Shampoo Limpieza Profunda",
+        "slug": "shampoo-limpieza-profunda",
+        "category": "tratamientos",
+        "categoryLabel": "Tratamientos especializados",
+        "presentation": "1 litro",
+        "image": "15-shampoo-limpieza.jpg",
+        "description": "Shampoo preparador para retirar residuos antes de tratamientos profesionales.",
+        "prices": [
+            {
+                "label": "Precio",
+                "value": "$280"
+            }
         ],
-        benefits: [
+        "benefits": [
             "Elimina residuos de productos",
             "Ayuda a retirar aceites, siliconas e impurezas",
             "Abre ligeramente la cutícula",
             "Prepara para alisados y reconstrucciones",
             "Mejora la penetración de tratamientos"
         ],
-        ideal: [
+        "ideal": [
             "Preparación previa a procesos profesionales"
         ]
     },
     {
-        id: 19,
-        name: "Nanoplastia Molecular",
-        slug: "nanoplastia-molecular",
-        category: "tratamientos",
-        categoryLabel: "Tratamientos especializados",
-        presentation: "500 ml",
-        image: "18-nanoplastia-molecular.jpg",
-        description: "Tratamiento molecular orientado a mejorar la apariencia, suavidad y brillo del cabello.",
-        prices: [
-            { label: "Precio", value: "$580" }
+        "id": 20,
+        "name": "Plancha Moonstyle",
+        "slug": "plancha-moonstyle",
+        "category": "herramientas",
+        "categoryLabel": "Herramientas profesionales",
+        "presentation": "Herramienta profesional",
+        "image": "19-plancha-moonstyle.jpg",
+        "description": "Plancha profesional para apoyar procesos de estilizado y acabados de salón.",
+        "prices": [
+            {
+                "label": "Precio",
+                "value": "$2,500"
+            }
         ],
-        benefits: [
-            "Reparación capilar",
-            "Brillo intenso",
-            "Suavidad excepcional"
-        ],
-        ideal: [
-            "Cabello que necesita mejorar suavidad y apariencia"
-        ]
-    },
-    {
-        id: 20,
-        name: "Plancha Moonstyle",
-        slug: "plancha-moonstyle",
-        category: "herramientas",
-        categoryLabel: "Herramientas profesionales",
-        presentation: "Herramienta profesional",
-        image: "19-plancha-moonstyle.jpg",
-        description: "Plancha profesional para apoyar procesos de estilizado y acabados de salón.",
-        prices: [
-            { label: "Precio", value: "$2,500" }
-        ],
-        benefits: [
+        "benefits": [
             "Herramienta profesional",
             "Acabado premium",
             "Tecnología avanzada"
         ],
-        ideal: [
+        "ideal": [
             "Estilistas",
             "Uso profesional"
         ],
-        badge: "Herramienta"
+        "badge": "Herramienta"
     }
 ];
 
